@@ -1,69 +1,66 @@
 {
-  "name": "webpack-inline-manifest-plugin",
-  "version": "5.0.0",
-  "description": "Inline the webpack runtime/manifest chunk with a <script> tag to save an HTTP request.",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "require": "./index.js",
-      "default": "./index.js"
-    }
-  },
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
-  "engines": {
-    "node": ">=10.13.0"
-  },
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "prepublishOnly": "npm run lint && npm test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/almothafar/webpack-inline-manifest-plugin.git"
-  },
-  "keywords": [
-    "webpack",
-    "webpack-plugin",
-    "webpack5",
-    "plugin",
-    "manifest",
-    "runtime",
-    "runtimeChunk",
-    "inline",
-    "html-webpack-plugin",
-    "webpack-inline-manifest-plugin"
-  ],
-  "author": "Al-Mothafar Al-Hasan <almothafar@gmail.com> (https://github.com/almothafar)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/almothafar/webpack-inline-manifest-plugin/issues"
-  },
-  "homepage": "https://github.com/almothafar/webpack-inline-manifest-plugin#readme",
-  "dependencies": {
-    "source-map-url": "^0.4.1"
-  },
-  "peerDependencies": {
-    "html-webpack-plugin": "^5.0.0",
-    "webpack": "^5.20.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.0.0",
-    "eslint": "^9.0.0",
-    "eslint-config-prettier": "^9.1.0",
-    "globals": "^15.0.0",
-    "html-webpack-plugin": "^5.6.0",
-    "jest": "^29.7.0",
-    "prettier": "^3.2.0",
-    "webpack": "^5.90.0"
-  }
+	"name": "webpack-inline-manifest-plugin",
+	"version": "5.0.0",
+	"description": "Inline the webpack runtime/manifest chunk with a <script> tag to save an HTTP request.",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"require": "./index.js",
+			"default": "./index.js"
+		}
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"engines": {
+		"node": ">=10.13.0"
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"test": "jest",
+		"test:coverage": "jest --coverage",
+		"prepublishOnly": "npm run lint && npm test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/almothafar/webpack-inline-manifest-plugin.git"
+	},
+	"keywords": [
+		"webpack",
+		"webpack-plugin",
+		"webpack5",
+		"plugin",
+		"manifest",
+		"runtime",
+		"runtimeChunk",
+		"inline",
+		"html-webpack-plugin",
+		"webpack-inline-manifest-plugin"
+	],
+	"author": "Al-Mothafar Al-Hasan <almothafar@gmail.com> (https://github.com/almothafar)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/almothafar/webpack-inline-manifest-plugin/issues"
+	},
+	"homepage": "https://github.com/almothafar/webpack-inline-manifest-plugin#readme",
+	"peerDependencies": {
+		"html-webpack-plugin": "^5.0.0",
+		"webpack": "^5.20.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.0",
+		"eslint": "^10.0.0",
+		"eslint-config-prettier": "^10.0.0",
+		"globals": "^16.0.0",
+		"html-webpack-plugin": "^5.6.0",
+		"jest": "^30.0.0",
+		"prettier": "^3.2.0",
+		"webpack": "^5.90.0"
+	}
 }

@@ -35,10 +35,15 @@ All notable changes to this project are documented here. This project adheres to
 - The runtime chunk is now located by the configured `name` instead of a hard-coded
   `manifest` chunk name.
 
+### Removed
+
+- **No runtime dependencies.** The deprecated `source-map-url` dependency was replaced
+  with a small internal helper, so the package now ships with zero runtime dependencies.
+
 ### Changed
 
-- Tooling modernised: ESLint 9 flat config + Prettier (replacing `eslint-config-standard`),
-  GitHub Actions (replacing CircleCI), and `source-map-url@^0.4.1`.
+- Tooling modernised: ESLint flat config + Prettier (replacing `eslint-config-standard`),
+  GitHub Actions (replacing CircleCI), tab indentation, and a `.gitattributes` enforcing LF.
 
 ## [4.0.2] and earlier
 

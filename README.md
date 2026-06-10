@@ -21,7 +21,7 @@ webpack's runtime is small but changes on almost every build. The common pattern
 npm install webpack-inline-manifest-plugin --save-dev
 ```
 
-`webpack` and `html-webpack-plugin` are peer dependencies — you almost certainly already have them.
+`webpack` and `html-webpack-plugin` are peer dependencies — you almost certainly already have them. The plugin itself has **no runtime dependencies**.
 
 ## Usage
 
