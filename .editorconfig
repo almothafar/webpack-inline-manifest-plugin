@@ -3,15 +3,19 @@
 # top-most EditorConfig file
 root = true
 
-# Unix-style newlines with a newline ending every file
 [*]
 charset = utf-8
 end_of_line = lf
 insert_final_newline = true
-indent_style = space
-indent_size = 4
+trim_trailing_whitespace = true
+indent_style = tab
 
-# Matches the exact files either package.json or .travis.yml
-[{package.json,.travis.yml}]
+# YAML disallows tabs for indentation; Markdown is whitespace-sensitive.
+[*.{yml,yaml}]
 indent_style = space
 indent_size = 2
+
+[*.md]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = false

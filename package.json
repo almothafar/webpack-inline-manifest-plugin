@@ -1,37 +1,66 @@
 {
-  "name": "webpack-inline-manifest-plugin",
-  "version": "4.0.2",
-  "description": "inline your Webpack manifest.js with a script tag to save http request",
-  "main": "index.js",
-  "scripts": {
-    "lint": "npm run eslint --debug -v --color --ext .js",
-    "eslint": "eslint"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/almothafar/webpack-inline-manifest-plugin.git"
-  },
-  "keywords": [
-    "webpack",
-    "plugin",
-    "manifest",
-    "runtime",
-    "webpack-inline-manifest-plugin"
-  ],
-  "author": "Al-Mothafar Al-Hasan <almothafar@gmail.com> (https://github.com/almothafar)",
-  "license": "MIT",
-  "homepage": "https://github.com/almothafar/webpack-inline-manifest-plugin",
-  "dependencies": {
-    "source-map-url": "0.4.0"
-  },
-  "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.1.0"
-  },
-  "peerDependencies": {
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.0.0"
-  }
+	"name": "webpack-inline-manifest-plugin",
+	"version": "5.0.0",
+	"description": "Inline the webpack runtime/manifest chunk with a <script> tag to save an HTTP request.",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"require": "./index.js",
+			"default": "./index.js"
+		}
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"engines": {
+		"node": ">=10.13.0"
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"test": "jest",
+		"test:coverage": "jest --coverage",
+		"prepublishOnly": "npm run lint && npm test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/almothafar/webpack-inline-manifest-plugin.git"
+	},
+	"keywords": [
+		"webpack",
+		"webpack-plugin",
+		"webpack5",
+		"plugin",
+		"manifest",
+		"runtime",
+		"runtimeChunk",
+		"inline",
+		"html-webpack-plugin",
+		"webpack-inline-manifest-plugin"
+	],
+	"author": "Al-Mothafar Al-Hasan <almothafar@gmail.com> (https://github.com/almothafar)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/almothafar/webpack-inline-manifest-plugin/issues"
+	},
+	"homepage": "https://github.com/almothafar/webpack-inline-manifest-plugin#readme",
+	"peerDependencies": {
+		"html-webpack-plugin": "^5.0.0",
+		"webpack": "^5.20.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"eslint": "^10.4.1",
+		"eslint-config-prettier": "^10.1.8",
+		"globals": "^17.6.0",
+		"html-webpack-plugin": "^5.6.7",
+		"jest": "^30.4.2",
+		"prettier": "^3.8.4",
+		"webpack": "^5.107.2"
+	}
 }

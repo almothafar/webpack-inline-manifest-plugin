@@ -1,0 +1,2 @@
+# Normalize line endings to LF in the repository on commit.
+* text=auto eol=lf
